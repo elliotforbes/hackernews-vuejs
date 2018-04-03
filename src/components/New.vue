@@ -6,24 +6,23 @@
 
 <script>
 import Item from '@/components/Item'
-
 export default {
-  name: 'Homepage',
+  name: 'New',
   components: {
     'item': Item
   },
   data: function () {
     return {
       err: '',
-      stories: this.$store.state.topStories
+      stories: this.$store.state.newStories
     }
   },
   created: function () {
-    if (this.$store.state.topStories.length === 0) this.$store.dispatch('fetch_top_stories')
+    if (this.$store.state.newStories.length === 0) this.$store.dispatch('fetch_new_stories')
   }
 }
 </script>
 
-<style scoped>
+<style>
 
 </style>

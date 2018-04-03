@@ -1,11 +1,9 @@
 <template>
     <div class="pure-menu pure-menu-horizontal">
         <div class="container">
-        <a href="#" class="pure-menu-heading pure-menu-link">Home</a>
+        <router-link :to="{ path: '/' }" class="pure-menu-heading pure-menu-link">Home</router-link>
         <ul class="pure-menu-list">
-            <li class="pure-menu-item"><a href="#" class="pure-menu-link">News</a></li>
-            <li class="pure-menu-item"><a href="#" class="pure-menu-link">Sports</a></li>
-            <li class="pure-menu-item"><a href="#" class="pure-menu-link">Finance</a></li>
+            <li class="pure-menu-item"><router-link :to="{ path: '/new' }" class="pure-menu-link">New</router-link></li>
         </ul>
         </div>
     </div>
