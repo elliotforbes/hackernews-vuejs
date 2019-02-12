@@ -1,0 +1,23 @@
+language: node_js
+
+node_js:
+  - "10"
+
+  before_script:
+- npm install
+
+script:
+- npm run build
+
+# deploy:
+#   provider: s3
+#   access_key_id:
+#   secret_access_key:
+#     secure:
+#   bucket: my-bucket-name
+#   local-dir: dist
+#   skip_cleanup: true
+#   region: eu-west-1
+#   acl: public_read
+#   on:
+#     repo: elliotforbes/
