@@ -11,11 +11,13 @@ export default {
               commit('APPEND_TOP_STORY', result)
             })
             .catch((err) => {
+              /* eslint-disable */ 
               console.log(err)
             })
         })
       })
       .catch(err => {
+        /* eslint-disable */ 
         console.log(err)
       })
   },
@@ -34,6 +36,7 @@ export default {
         })
       })
       .catch(err => {
+        /* eslint-disable */ 
         console.log(err)
       })
   }
